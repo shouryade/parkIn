@@ -1,0 +1,73 @@
+/*CSS Reset*/
+
+/*Sky Styling*/
+
+.sky {
+    margin-top: 9vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.track {
+    background-image: url(/static/track.jpeg);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 1000%;
+    height: 10vh;
+    animation: trackanimation 6s linear infinite;
+}
+
+.car {
+    background-image: url(/static/car-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    height: 6.699rem;
+    position: absolute;
+    bottom: 79px;
+    left: 396px;
+    transform: scaleX(-1);
+}
+
+.wheel {
+    position: absolute;
+    animation: wheelanimation linear .6s infinite;
+}
+
+.wheel1 {
+    background-image: url(/static/wheel1-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 49px;
+    bottom: 55px;
+    left: 600px;
+}
+
+.wheel2 {
+    background-image: url(/static/wheel2-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 47px;
+    bottom: 55px;
+    left: 434px;
+}
+
+@keyframes wheelanimation {
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes trackanimation {
+
+    100% {
+        transform: translate(-500vw);
+    }
+}

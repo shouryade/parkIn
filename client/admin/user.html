@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>parkIn-Admin</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="/" class="logo">parkIn</a>
+        <p>Secure Parking Systems</p>
+    </div>
+    <div class="greeting">
+        <h3>Welcome, {{username}}</h3>
+    </div>
+
+
+    <div class="flex-container">
+        <div class="admin-actions">
+            <div class="aactions">
+                <p><a href="/admin/{{viewticket}}">View ALL Parking Tickets</a></p>
+            </div>
+            <div class="aactions">
+                <p><a href="/admin/{{adduser}}">Add New User</a></p>
+            </div>
+            <div class="aactions">
+                <p><a href="/admin/{{edit}}">Edit User Registration Details</a></p>
+            </div>
+            <div class="aactions">
+                <p><a href="/admin/{{resolve}}">Resolve Parking Fines</a></p>
+            </div>
+
+        </div>
+        <div class="flex-right">
+            <h1>{{fullname}}</h1>
+            <form>
+                <div class="formGroup">
+                    Status:
+                    <input type="text" placeholder="{{status}}" name="status" value="{{status}}" required
+                        autocomplete="off" disabled>
+                </div>
+                <div class="formGroup">
+                    Valid Till:
+                    <input type="year" id="yearvalid" name="yearvalid" value="{{yearvalid}}" placeholder="{{yearvalid}}"
+                        required disabled>
+                </div>
+
+        </div>
+
+    </div>
+
+    </form>
+
+    <div class="footer">
+        <p>&#169; parkIn Systems 2022</p>
+    </div>
+</body>
+
+</html>

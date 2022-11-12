@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    overflow: hidden;
+    text-align: center;
+    background-color: #121212;
+    height: 100px;
+    padding: 20px 10px;
+    padding-bottom: 0px;
+    margin-bottom: 17px;
+}
+
+.header a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 34px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header p {
+    font-size: 14;
+    line-height: 0.5;
+    color: #b3b3b3b3;
+
+}
+
+
+.footer {
+    position: fixed;
+    float: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #121212;
+    padding-bottom: 0px;
+}
+
+.footer p {
+    font-size: 14;
+    color: white;
+}
+
+.greeting{
+    width: 13%;
+    background: rgba(249, 246, 246, 1);
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.smallheader {
+    width: 90%;
+    background: #121212;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.smallheader p {
+    font-size: 17px;
+    color: white;
+}
+
+.ticketheader {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.ticketheader p {
+    font-size: 17px;
+    color: white;
+}
+
+.adminForm{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+}
+
+.adminForm p{
+    font-size: 10px;
+    color: white;
+}
+
+.adminForm input {
+    border-style:solid;
+    border-radius: 10px;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+input:focus {
+    outline: none !important;
+    border-bottom: 2px solid;
+    font-size: 12px;
+    font-weight: bold;
+    color: #121212;
+}
+
+::placeholder {
+    color: #b3b3b3b3;
+}
+
+
+.btn2 {
+    padding: 15px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #121212;
+    border-style: none;
+    color: white;
+    font-weight: 600;
+}

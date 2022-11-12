@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/admin.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>View ALL Parking Tickets</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="/" class="logo">parkIn</a>
+        <p>Secure Parking Systems</p>
+    </div>
+    <div class="smallheader">
+        <p>ALL Oustanding Parking Tickets</p>
+    </div>
+    {% for queries in ticketlist %}
+    <div class="ticketheader" style="background-color:#AF0606;">
+        <p><strong>{{queries['username']}}</strong> with vehicle number <strong>{{queries['vehicle']}}</strong> on <strong>{{queries['time']}}</strong> </p>
+    </div>
+    {% endfor %}
+
+    <div class="footer">
+        <p>&#169; parkIn Systems 2022</p>
+    </div>
+</body>
+
+</html>

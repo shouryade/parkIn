@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="x-icon" href="/static/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>parkIn</title>
+  <meta name="description" content="parkIn- An AI based smart parking PaaS">
+  <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="parkIn">
+  <meta itemprop="description" content="parkIn- An AI based smart parking PaaS">
+  <meta itemprop="image" content="">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://parkIn.ml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="parkIn">
+  <meta property="og:description" content="parkIn- An AI based smart parking PaaS">
+  <meta itemprop="og:image" content="">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="parkIn">
+  <meta name="twitter:description" content="parkIn- An AI based smart parking PaaS">
+  <meta itemprop="twitter:image" content="">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="/static/carstyle.css">
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="#home" class="logo">parkIn</a>
+    <p>Secure Parking Systems</p>
+  </div>
+
+  <div class="flex-container">
+    <div class="flex-left">
+      <h1>Parking,<br>
+        Redefined.</h1>
+      <p>Experience the future of parking, with state of art technologies to help you tackle parking
+        problems.<br><br>
+        We have a dedicated system for parking management, and it has the smallest number of intermediaries required
+        for administration.
+        <br>
+        <br>
+        Bootstrapped with everything you need to hit the ground in place and running, with guaranteed results.
+        Built using state-of-the-art deep learning algorithms and trained to achieve over 90% accuracy for
+        unauthorized parking detection, parkIn is a pioneer for automated and scalable parking systems.
+      </p>
+    </div>
+    <div class="flex-right">
+      <h1>Login</h1>
+      <form class="signUp" action="/" method="post" height="680px">
+
+        <div class="formGroup">
+          <input type="email" placeholder="username@university.edu" name="username" value="{{username}}" required
+            autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" placeholder="Password" name="password" value="{{password}}" autocomplete="off">
+        </div>
+
+        <div class="formGroup">
+          <input type="tel" id="phone" name="phone" value="{{phone}}" placeholder="Phone Number " required
+            autocomplete="off" pattern="[0-9]{10}">
+        </div>
+
+
+
+
+        <div class="formGroup">
+          <button type="submit" class="btn2">Login</button>
+        </div>
+    </div>
+
+  </div>
+
+  </form>
+
+  <div class="sky">
+    <div class="track"></div>
+    <div class="car"></div>
+    <div class=" wheel wheel1"></div>
+    <div class="wheel wheel2"></div>
+  </div>
+
+  <div class="footer">
+    <p><a href="mailto:parkin.messages@gmail.com">Contact us</a> now to avail installation and servicing benefits.
+    </p>
+  </div>
+</body>
+
+</html>

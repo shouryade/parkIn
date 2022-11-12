@@ -1,3 +1,12 @@
 .vscode/
 .env
 **__pycache__
+yolov4-deepsort/.ipynb_checkpoints
+yolov4-deepsort/LICENSE
+yolov4-deepsort/requirements-gpu.txt
+yolov4-deepsort/requirements.txt
+yolov4-deepsort/README.md
+yolov4-deepsort/material.md
+yolov4-deepsort/Pipfile
+yolov4-deepsort/outputs
+yolov4-deepsort/data/video

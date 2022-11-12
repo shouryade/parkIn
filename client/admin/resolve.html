@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/admin.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>parkIn-Admin</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="/" class="logo">parkIn</a>
+        <p>Secure Parking Systems</p>
+    </div>
+    <div class="greeting">
+        <h3>Resolve Fine Payment</h3>
+    </div>
+
+
+    <div class="admin-container">
+        <form class="signUp" action="/admin/resolve" method="post">
+            <div class="adminForm">
+                <input type="email" id="username" placeholder="username" name="username" value="{{username}}" required
+                    autocomplete="off">
+            </div>
+
+            <div class="adminForm">
+                <input type="text" placeholder="Vehicle Number" name="vehicle" value="{{vehicle}}" required
+                    autocomplete="off">
+            </div>
+            <div class="adminForm">
+                <input type="text" id="time" placeholder="Date" name="time" required value="{{time}}" required
+                    autocomplete="off">
+            </div>
+            <div class="adminForm">
+                <input type="text" id="fullname" placeholder="Enter Full Name of Admin" name="fullname" value="{{fullname}}" required
+                    autocomplete="off">
+            </div>
+            <div class="adminForm">
+                <input type="password" id="password" placeholder="Enter your admin password" name="password" value="{{password}}" required
+                    autocomplete="off">
+            </div>
+            
+            <div class="adminForm">
+                <button type="submit" class="btn2">Resolve Payment</button>
+            </div>
+        </form>
+
+
+    </div>
+
+    </form>
+
+    <div class="footer">
+        <p>&#169; parkIn Systems 2022</p>
+    </div>
+</body>
+
+</html>

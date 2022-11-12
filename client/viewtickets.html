@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>View Parking Tickets</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="/" class="logo">parkIn</a>
+        <p>Secure Parking Systems</p>
+    </div>
+    <div class="greeting">
+        <h3>Hey, {{username}}</h3>
+        <p>You have a total of {{len}} tickets!</p>
+
+    </div>
+    <div class="smallheader">
+        <p>ALL your Parking Tickets</p>
+    </div>
+    {% if len-length == 0 %}
+    <div class="ticketheader" style="width:95%;background-color:#1DB954;">
+        <p>Hooray! You have no pending tickets!</p>
+    </div>
+    {% for queries in ticketlist %}
+    {% if queries['resolved']== true %}
+    <div class="ticketheader" style="background-color:#39e75f;">
+        <p><strong>PAID FOR {{queries['username']}}</strong> with vehicle number <strong>{{queries['vehicle']}}</strong>
+            on <strong>{{queries['time']}}</strong> </p>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% else %}
+    {% for queries in ticketlist %}
+    {% if queries['resolved']== false %}
+    <div class="ticketheader" style="background-color:#AF0606;">
+        <p><strong>{{queries['username']}}</strong> with vehicle number <strong>{{queries['vehicle']}}</strong> on
+            <strong>{{queries['time']}}</strong> </p>
+    </div>
+
+    {% elif queries['resolved']== true %}
+    <div class="ticketheader" style="background-color:#39e75f;">
+        <p><strong>PAID FOR {{queries['username']}}</strong> with vehicle number <strong>{{queries['vehicle']}}</strong>
+            on <strong>{{queries['time']}}</strong> </p>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+
+
+    <div class="footer">
+        <p>&#169; parkIn Systems 2022</p>
+    </div>
+</body>
+
+</html>

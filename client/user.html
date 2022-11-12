@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>parkIn-User</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="/" class="logo">parkIn</a>
+        <p>Secure Parking Systems</p>
+    </div>
+    <div class="greeting">
+        <h3>Welcome, {{username}}</h3>
+    </div>
+
+
+    <div class="flex-container">
+        <div class="user-actions">
+            <div class="actions">
+                <p><a href="{{verificationwall}}">View Outstanding Parking Tickets</a></p>
+            </div>
+            <div class="actions">
+                <p><a href="{{pay}}">Pay Fines for Parking Tickets</a></p>
+            </div>
+            <div class="actions">
+                <p><a href="{{raise}}">Raise Request for Editing Details</a></p>
+            </div>
+
+        </div>
+        <div class="flex-right">
+            <h1>{{fullname}}</h1>
+            <form class="signUp" action="/" method="post" height="600px">
+                <div class="formGroup">
+                    Status:
+                    <input type="text" placeholder="{{status}}" name="status" value="{{status}}" required
+                        autocomplete="off" disabled>
+                </div>
+                <div class="formGroup" id="detail">
+                    Vechicle Number:
+                    <input type="text" placeholder="{{vehicle}}" name="vehicle" value="{{vehicle}}" required
+                        autocomplete="off" disabled>
+                </div>
+                <div class="formGroup">
+                    Valid Till:
+                    <input type="year" id="yearvalid" name="yearvalid" value="{{yearvalid}}" placeholder="{{yearvalid}}"
+                        required disabled>
+                </div>
+        </div>
+
+    </div>
+
+    </form>
+
+    <div class="footer">
+        <p>&#169; parkIn Systems 2022</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <title>parkIn</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="/" class="logo">parkIn</a>
+    <p>Secure Parking Systems</p>
+  </div>
+  <div class="smallheader">
+    <p>Raise a request to your admin</p>
+  </div>
+  <div class="raiseGroup">
+    <form class="signUp" action="/raise" method="post">
+      <div class="raiseGroup">
+        <input type="email" id="username" placeholder="Your Username" name="username" value="{{username}}" required
+          autocomplete="off">
+      </div>
+      <div class="raiseGroup">
+        <input type="tel" id="phone" name="phone" value="{{phone}}" placeholder="Phone Number " required
+          autocomplete="off" pattern="[0-9]{10}">
+      </div>
+      <div class="raiseGroup">
+        <input type="text" id="fullname" placeholder="Your Full Name" name="fullname" value="{{fullname}}" required
+          autocomplete="off">
+      </div>
+      <div class="raiseGroup">
+        <input type="text" placeholder="Email ID of your Admin" name="email" value="{{email}}" required
+          autocomplete="off">
+      </div>
+      <div class="raiseGroup">
+        <input type="text" id="msg" placeholder="Request to Raise" name="msg" required value="{{msg}}"
+          autocomplete="off">
+      </div>
+
+      <div class="raiseGroup">
+        <button type="submit" class="btn2">Send Request!</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&#169; parkIn Systems 2022</p>
+  </div>
+</body>
+
+</html>

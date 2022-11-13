@@ -7,7 +7,7 @@ from fastapi.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 from pymongo import MongoClient
 from typing import Optional
-from models.models import UserRegForm, editForm
+from server.models.models import UserRegForm, editForm
 import random, string
 import smtplib
 from email.message import EmailMessage

@@ -138,10 +138,10 @@ async def raiser(
             fullname, phone
         )
         message["To"] = email
-        message["From"] = "parkin.messages2022@gmail.com"
+        message["From"] = "parkin.messages@gmail.com"
         message["Cc"] = username
         server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        server.login("parkin.messages2022@gmail.com", SMTP_PASSWORD)
+        server.login("parkin.messages@gmail.com", SMTP_PASSWORD)
         server.send_message(message)
         server.quit()
         print("Email sent successfully!")

@@ -7,7 +7,7 @@ from fastapi.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 from pymongo import MongoClient
 from typing import Optional
-from server.models.models import UserRegForm, editForm
+from models.models import UserRegForm, editForm
 import random, string
 import smtplib
 from email.message import EmailMessage
@@ -138,10 +138,10 @@ async def raiser(
             fullname, phone
         )
         message["To"] = email
-        message["From"] = "parkrite.messages2022@gmail.com"
+        message["From"] = "parkin.messages2022@gmail.com"
         message["Cc"] = username
         server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        server.login("parkrite.messages2022@gmail.com", SMTP_PASSWORD)
+        server.login("parkin.messages2022@gmail.com", SMTP_PASSWORD)
         server.send_message(message)
         server.quit()
         print("Email sent successfully!")
@@ -333,7 +333,3 @@ async def register(
             "error.html",
             {"request": request, "em": "Record Doesn't Exist on the Database!"},
         )
-
-
-# if __name__ == "__main__":
-#     uvicorn.run("app:app", reload=True, host="127.0.0.1", port=5000)

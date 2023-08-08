@@ -1,1 +1,1 @@
-*.pb liguist-language=PYTHON
+yolov4-deepsort/** liguist-language=PYTHON
